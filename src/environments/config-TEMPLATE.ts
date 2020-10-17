@@ -1,4 +1,5 @@
-export const apiKeys =
+export const config =
   {
     accuweather: '',
+    city: '',
   }

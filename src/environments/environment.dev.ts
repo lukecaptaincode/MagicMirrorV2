@@ -1,6 +1,6 @@
-import {apiKeys} from './config';
+import {config} from './config';
 export const AppConfig = {
   production: false,
   environment: 'DEV',
-  keys: apiKeys
+  user: config
 };

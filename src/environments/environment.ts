@@ -1,7 +1,7 @@
-import {apiKeys} from "./config";
+import {config} from './config';
 
 export const AppConfig = {
   production: false,
   environment: 'LOCAL',
-  keys: apiKeys
+  user: config
 };
