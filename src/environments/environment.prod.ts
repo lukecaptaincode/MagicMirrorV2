@@ -1,4 +1,6 @@
+import {apiKeys} from './config';
 export const AppConfig = {
   production: true,
-  environment: 'PROD'
+  environment: 'PROD',
+  keys: apiKeys
 };
