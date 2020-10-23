@@ -1,5 +1,6 @@
 export const config =
   {
-    accuweather: '',
+    weatherbit: '',
     city: '',
+    country: '',
   }
