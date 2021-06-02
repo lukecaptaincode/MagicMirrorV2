@@ -3,7 +3,7 @@ import { SpectronClient } from 'spectron';
 
 import commonSetup from './common-setup';
 
-describe('angular-electron App', function () {
+describe('MagicMirror App', function () {
 
   commonSetup.apply(this);
 
@@ -18,10 +18,9 @@ describe('angular-electron App', function () {
     expect(count).to.equal(1);
   });
 
-  it('should display message saying App works !', async function () {
-    const elem = await client.$('app-home h1');
-    const text = await elem.getText();
-    expect(text).to.equal('App works !');
+  it('should display weather widget!', async function () {
+    const elem = await client.$('app-home app-weather-widget');
+    expect(elem).to.exist;
   });
 
 });

@@ -4,7 +4,8 @@
     "module": "commonjs",
     "types": [
       "mocha",
-      "node"
+      "node",
+      "jasmine"
     ]
   },
   "include": [
