@@ -1,4 +1,6 @@
+import {config} from './config';
 export const AppConfig = {
   production: true,
-  environment: 'PROD'
+  environment: 'PROD',
+  user: config
 };

@@ -1,0 +1,11 @@
+<div *ngIf="!hasError" class="weather-data-container">
+  <img src="{{weather?.WeatherIconUrl}}" alt="No weather image"/>
+  <div><h3>{{weather?.weather.description}} {{weather?.temp}}&#176;C</h3>
+    <h5>Sunrise at: <b>{{weather?.sunrise}}</b> - Sunset at: <b>{{weather?.sunset}}</b></h5>
+    <h6>Updated at: <b>{{weather?.convertedDateTime}}</b></h6></div>
+</div>
+<div *ngIf="hasError">
+  <p>Error retrieving weather</p>
+</div>
+
+
